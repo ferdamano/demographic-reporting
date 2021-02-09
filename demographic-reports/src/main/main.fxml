@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="768.0" minWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <right>
+      <VBox prefHeight="620.0" prefWidth="982.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="136.0" prefWidth="1221.0" style="-fx-background-color: white;" VBox.vgrow="NEVER">
+               <children>
+                  <VBox minHeight="150.0" minWidth="1024.0">
+                     <children>
+                        <HBox minHeight="150.0" minWidth="1024.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="63.0" prefWidth="247.0" text="Search Criteria : ">
+                                 <font>
+                                    <Font name="Helvetica Neue" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                              </Label>
+                              <FlowPane prefHeight="127.0" prefWidth="619.0">
+                                 <children>
+                                    <Label nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="152.0" style="-fx-border-color: black; -fx-border-radius: 50px;" text="Age: 75 to 100">
+                                       <graphic>
+                                          <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="25.0" style="-fx-background-color: white;" text="x" textAlignment="CENTER" textFill="#495057">
+                                             <font>
+                                                <Font name="Arial Black" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </graphic>
+                                       <font>
+                                          <Font name="Helvetica Neue" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" right="10.0" />
+                                       </FlowPane.margin>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="25.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="193.0" style="-fx-border-color: black; -fx-border-radius: 50px;" text="District: First District">
+                                       <font>
+                                          <Font name="Helvetica Neue" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="25.0" style="-fx-background-color: white;" text="x" textAlignment="CENTER" textFill="#495057">
+                                             <font>
+                                                <Font name="Arial Black" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label layoutX="172.0" layoutY="25.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="188.0" style="-fx-border-color: black; -fx-border-radius: 50px;" text="Plebiscite Vote: Yes">
+                                       <font>
+                                          <Font name="Helvetica Neue" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="25.0" style="-fx-background-color: white;" text="x" textAlignment="CENTER" textFill="#495057">
+                                             <font>
+                                                <Font name="Arial Black" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label layoutX="375.0" layoutY="25.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="145.0" style="-fx-border-color: black; -fx-border-radius: 50px;" text="Cong Vote: 2">
+                                       <font>
+                                          <Font name="Helvetica Neue" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="25.0" style="-fx-background-color: white;" text="x" textAlignment="CENTER" textFill="#495057">
+                                             <font>
+                                                <Font name="Arial Black" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label layoutX="573.0" layoutY="25.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="129.0" style="-fx-border-color: black; -fx-border-radius: 50px;" text="Gender: M">
+                                       <font>
+                                          <Font name="Helvetica Neue" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="25.0" style="-fx-background-color: white;" text="x" textAlignment="CENTER" textFill="#495057">
+                                             <font>
+                                                <Font name="Arial Black" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                              </FlowPane>
+                              <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="127.0" prefWidth="115.0">
+                                 <children>
+                                    <Button layoutX="7.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: &quot;#ADB5BDADB5BD&quot;;" text="Clear ALL" textFill="#495057">
+                                       <font>
+                                          <Font name="Helvetica Neue" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Accordion>
+              <panes>
+                <TitledPane animated="false" text="_">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                           <children>
+                              <HBox layoutX="-2.0" layoutY="-1.0" minWidth="1024.0">
+                                 <children>
+                                    <VBox prefHeight="204.0" prefWidth="243.0" HBox.hgrow="NEVER">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="286.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="89.0" text="Age" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField alignment="CENTER_RIGHT" prefHeight="1.0" prefWidth="59.0">
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="61.0" prefWidth="34.0" text="to">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField alignment="CENTER_RIGHT" layoutX="99.0" layoutY="22.0" prefHeight="0.0" prefWidth="59.0">
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="286.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="89.0" text="Gender" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ComboBox prefHeight="31.0" prefWidth="150.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <Separator orientation="VERTICAL" prefHeight="163.0" prefWidth="42.0" />
+                                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="204.0" prefWidth="296.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" minWidth="140.0" text="Barangay" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ComboBox minWidth="200.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" minWidth="140.0" text="Municipality/City" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ComboBox minWidth="200.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="48.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" minWidth="140.0" text="District" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ComboBox minWidth="200.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="86.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" minWidth="140.0" text="Precinct Number" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ComboBox minWidth="200.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="124.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" minWidth="140.0" text="Polling Center" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ComboBox minWidth="200.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <Separator orientation="VERTICAL" prefHeight="163.0" prefWidth="42.0" />
+                                    <VBox layoutX="257.0" layoutY="20.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="112.0">
+                                             <children>
+                                                <CheckBox mnemonicParsing="false" />
+                                                <Label text="Plebiscite Vote" textAlignment="RIGHT" HBox.hgrow="NEVER">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="18.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Button mnemonicParsing="false" style="-fx-background-color: &quot;#ADB5BDADB5BD&quot;;" text="clear" textFill="#495057">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                          <FlowPane hgap="10.0" vgap="10.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="Yes" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="No" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="156.0" layoutY="10.0">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="Abstain" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </FlowPane>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <CheckBox mnemonicParsing="false" />
+                                                <Label text="Cong Vote" textAlignment="RIGHT" HBox.hgrow="NEVER">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="18.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Button mnemonicParsing="false" style="-fx-background-color: &quot;#ADB5BDADB5BD&quot;;" text="clear" textFill="#495057">
+                                                   <font>
+                                                      <Font name="Helvetica Neue" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="30.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <FlowPane hgap="10.0" vgap="10.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="1" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="2" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="83.0" layoutY="10.0">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="3" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="156.0" layoutY="10.0">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="Abstain" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="229.0" layoutY="10.0">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" />
+                                                      <Label text="Undecided" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Helvetica Neue" size="14.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <padding>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </FlowPane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </AnchorPane>
+                  </content>
+                     <font>
+                        <Font name="Helvetica Neue" size="18.0" />
+                     </font>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Pane fx:id="container_RecordsTable" minWidth="1024.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

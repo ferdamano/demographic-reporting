@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="384" minWidth="1024" prefHeight="384" prefWidth="1024" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1">
+  <content>
+    <AnchorPane minHeight="384" minWidth="1024">
+         <children>
+            <TableView minHeight="384" minWidth="1024" prefHeight="384" prefWidth="1024" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
